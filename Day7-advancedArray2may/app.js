@@ -48,12 +48,12 @@ const leftRotationByUserDValue = () => {
   let k = 6;
   k=k%arr.length;
 
-  for (let j = 1; j <= k; j++) {
-    let fisrtele = arr[0];
+  for (let j = 0; j < k; j++) {
+    let firstele = arr[0];
     for (let i = 0; i < arr.length-1; i++) {
       arr[i] = arr[i + 1];
     }
-    arr[arr.length - 1] = fisrtele;
+    arr[arr.length - 1] = firstele;
   }
   console.log(arr);
 };
