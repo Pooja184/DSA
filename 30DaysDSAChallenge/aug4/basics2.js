@@ -72,6 +72,23 @@ const rigthRotationBy1=(arr)=>{
     arr[0]=lastCopy
     return arr
 }
-console.log(rigthRotationBy1([1,2,3,4,5]));
+// console.log(rigthRotationBy1([1,2,3,4,5]));
+
+const rotationByK=(arr)=>{
+    let k=1;
+    k=k%arr.length-1;
+    // console.log(arr.length)
+    for(let i=0;i<=k;i++){
+        let firstele=arr[0];
+        for(let j=0;j<arr.length;j++){
+            arr[j]=arr[j+1];
+        }
+        // console.log(arr.length-1)
+        arr[arr.length-1]=firstele;
+        
+    }
+    return arr;
+}
+console.log(rotationByK([1,2,3,4,5]));
 
 
